@@ -7,7 +7,7 @@ Installation
 ------------
 + Download Twig @ http://twig.sensiolabs.org/
 + Copy the Twig directory to **application/third_party**
-+ Copy **MY_Parser.php** from CI-Twig-Parser to **application/libraries**
++ Copy CI-Twig-Parser to the **application** folder.
 
 And that should be it. :)
 
@@ -29,7 +29,7 @@ Bonus
 -----
 CI-Twig-Parser also makes CI functions available to you in the views.
 
-By default all functions provided by libraries and helpers in the **autoload.php** config file are available.
+By default all functions provided by libraries and helpers in the **autoload.php** config file are available. Change the **register_autoload** config item to *FALSE* to disable this.
 
 If you have loaded more helpers or libraries in your controller simply run the below command to make the functions available to Twig.
 ```
@@ -47,7 +47,7 @@ In your view you can now use the **anchor** like this:
 ```
 {{anchor('users/dashboard', 'Dashboard')}}
 ```
-You can also specify an alias for further compatibility:
+To make it even easier for designers you can also specify an alias for the function:
 ```
 $this->load->helper('url');
 
