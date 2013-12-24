@@ -1,3 +1,7 @@
+```
+Plugin no longer supported. I suggest finding an alternative.
+```
+
 CI-Twig-Parser
 ==============
 
